@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#46454C"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="25dp"
+        tools:layout_editor_absoluteX="138dp">
+
+        <TextView
+            android:id="@+id/current_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="25dp"
+            android:text="Current Speed "
+            android:textColor="#c7006e"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/id_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/current_speed"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:textSize="25sp"
+            android:text="@string/initial_speed"
+            android:textColor="#570EFA" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_speed"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="25dp"
+            android:text="From 10 to 30"
+            android:textColor="#c7006e"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/id_10_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView9"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:text="@string/From10_30"
+            android:textColor="#570EFA" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_10_30"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="25dp"
+            android:text="From 30 to 10"
+            android:textColor="#c7006e"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/id_30_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView11"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="@string/From30_10"
+            android:textColor="#570EFA" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
